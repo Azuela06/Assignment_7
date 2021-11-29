@@ -3,13 +3,16 @@ def Counter_wvc():
     vowel_count = 0
     consonant_count = 0
     word_count=0
-    vowels = ['a','e','i','o','u']
+    vowels = ['a','e','i','o','u','A','E','I','O','U']
     word = [" "]
+    special = [",",".","'"]
     for sentence in statement:
         if sentence in vowels:
             vowel_count += 1
         elif sentence in word:
             word_count += 1
+        elif sentence in special:
+            consonant_count += 0
         else:
             consonant_count += 1
     return vowel_count, consonant_count, word_count + 1

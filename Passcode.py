@@ -1,8 +1,5 @@
 import re
 
-print("Please input a passcode which contains atleast a capital letter, a number, a special character [!@#_$%^&*+-/\><], and greater than 15 characters")
-
-
 def PassValidate():
     passcode = input("Please put a strong password: ")
     valid = True
@@ -22,5 +19,9 @@ def PassValidate():
         else:
             print("Passcode inputted is valid")
             break
+print("Welcome to passcode validator! Here you can check if your passcode is valid.")
+
+print("Please input a passcode which contains atleast a capital letter, a number, a special character [!@#_$%^&*+-/\><], and greater than 15 characters")
+
 
 PassValidate()
